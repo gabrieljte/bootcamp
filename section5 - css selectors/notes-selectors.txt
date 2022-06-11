@@ -1,0 +1,76 @@
+tudo no css segue o seguinte padrão
+    selector {
+        property: value;
+    }
+
+na seção 5, o foco é no *selector*, entre os tipos de selectors e como trabalhar com eles
+*lembrar de refazer o reddit
+-----------------------------------------------------------------------------------------
+universal selector : *
+* {
+    prop: value;
+}
+
+o selector * é responsavel por selecionar *todos* os elementos da página - não é tão usado
+-----------------------------------------------------------------------------------------
+element selector 
+element (img, button, h1, h2, p, input) {
+    prop: value;
+}
+
+o element selector ira selecionar todos os elementos com aquele nome (ex: todos os botões)
+-----------------------------------------------------------------------------------------
+selector list
+h1,h2 {
+    prop: value;
+}
+
+com o uso da virgula, seleciona-se mais de um elemento que você deseja estilizar de maneira similar
+-----------------------------------------------------------------------------------------
+id selector
+#id {
+    prop: value;
+}
+
+usado para estilizar de maneira diferente apenas *um* elemento, podendo ser atribuido apenas 1 ID a um elemento
+-----------------------------------------------------------------------------------------
+class selector
+.class {
+    prop: value;
+}
+
+usado para estilizar todos os elementos com aquela class, podendo ser usado para varios elementos
+-----------------------------------------------------------------------------------------
+descendant selector
+
+.classe element(esse elemento é um descente, ou seja, esta dentro de algo que tenha a class="classe") {
+    prop: value;
+}
+
+span a {
+    prop: value;
+}
+
+usado, nesse caso, para indicar que todas as anchor tags que estão dentro de um span vão ser estilizados.
+no geral, todos os elementos2 que estão dentro do elemento1 serão estilizados.
+-----------------------------------------------------------------------------------------
+attribute selector
+
+element[atributte=""] {
+    prop: value;
+}
+
+pouco usado, serve para pegar todos os elementos que possuem aquele atributo (https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+-----------------------------------------------------------------------------------------
+pseudo classes
+é um atributo (vem depois de um :) que pode ser adicionado ao css para indicar uma ação/estado especial do elemento, como por exemplo:
+element:hover --> o css sera aplicado ao elemento quando o mouse estiver em cima dele
+element:active --> o css sera aplicado ao elemento quando ele estiver sendo ativado
+element:check --> pode ser usado em radio, para aplicar o css quando a option estiver com check
+element:nth-of-type(numero/numeron) --> duas ocasiões: exemplo nth-of-type(2) - o css sera aplicado somente ao segundo elemento daquela sequencia de elementos iguais  /// nth-of-type(2n) - o css sera aplicado nos 2,4,6,8... elementos daquela sequencia 
+-----------------------------------------------------------------------------------------
+pseudo elements 
+é um atributo (vem depois de duas ::) que pode ser adicionado ao css para estilizar uma parte especifica do elemento, como por exemplo:
+element::first-letter --> o css sera aplicado somente a primeira letra
+element::first-line --> o css sera aplicado somente a primeira linha
+element::selection --> o css sera aplicado somente em elementos que foram selecionados pelo usuário

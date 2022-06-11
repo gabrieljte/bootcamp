@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Section 3</title>
+</head>
+
+<body>
+    <main>
+     <!--file:///C:/search?username=suppsaysgg&password=Brayan123&color=%23a83838&number=52-->
+        <h1>Forms</h1>
+        <form action="/search">  <!--atributo action - para onde o input sera encaminhado ao dar submit--> 
+            <div>
+                <label for="username">Digite seu nome de usuário</label>
+                <input type="text" placeholder="..." id="username" name="username"> <!-- todos os tipos de input - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+                <!--name - aparece logo após o action, serve para enviar o dado para o server-->
+            </div>
+
+            <div>
+                <label for="password">Digite sua senha!</label>
+                <input type="password" placeholder="..." id="password" name="password"> <!-- placeholder - é o texto que aparece enquanto o input está vazio-->
+            </div>
+
+            <div>
+                <label for="color">Escolha uma cor:</label> <!--o texto especifico para aquele input--> <!--atributo for - indica a qual ele está se referindo-->
+                <input type="color" id="color" name="color"> <!--atributo id serve principalmente para redirecionar o elemento <label> para o input de mesmo id que o atributo for-->
+            </div>
+
+            <div>
+                <label for="number">Diga-nos um número (1-100)</label>
+                <input type="number" placeholder="..." id="number" name="number">
+            </div>
+            <button>Enviar formulário</button> <!--sempre que um button estiver dentro de um form, o comportamento padrão sera o de enviar aquele formulario (submit)-->
+            <!--entretanto, é possivel mudar o comportamento do button usando o atributo type (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type)-->
+            <button type="button">Não faz nada!</button>
+        </form>
+        
+    </main>
+</body>
+
+</html>

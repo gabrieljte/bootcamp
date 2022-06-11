@@ -1,0 +1,20 @@
+/*funciona para todas as paginas (arquivos html em um projeto) e todos os elementos (mesmo duplicados)*/
+
+h2 { 
+    color: rgb(255, 0, 242); /*propriedade color: altera a cor do texto do elemento*/
+    background-color: rgb(114, 68, 156); /*prop background-color: altera a cor de fundo do elemento*/
+}
+
+button {
+    color: rgb(255, 0, 43); /*sistema de cor rgb*/
+    background-color: deepskyblue;
+}
+
+p {
+    color: #00c3ffbe;
+    background-color: rgb(145, 153, 134);
+}
+
+body {
+    background-color: #000; /*ou #000000*/
+}
