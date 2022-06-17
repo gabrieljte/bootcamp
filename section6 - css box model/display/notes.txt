@@ -1,0 +1,4 @@
+display property: muda o jeito como os elementos irão se dispor e se comportar na pagina
+display: inline; - os elementos vão ficar na mesma linha, sem ocupar todo o bloco da pagina (ignora height e width, padding e margin funcionam apenas horzontalmente)
+display: block; - os elementos vão quebrar a linha, ocupando todo seu bloco da pagina (respeita height, width, padding e margin)
+display: inline-block; - se comporta como um inline element, porém as propriedades height, width, padding e margin são respeitadas
