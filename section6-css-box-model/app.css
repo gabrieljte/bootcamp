@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+h1 {
+    margin: 25px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#one {
+    background-color: #ff006e;
+    border-width: 5px;
+    border-color: rgb(2, 88, 163);
+    border-style: solid;
+    /*box-sizing: border-box; faz com que o conteudo todo mantenha a largura e altura ja ditadas, sem adicionar nem subtrair pixels*/
+}
+
+#two {
+    background-color: #5e548e;
+    border-width: 3px;
+    border-color: black;
+    border-style: dashed solid;
+}
+
+#three {
+    background-color: #ef233c;
+    border: 10px solid rgb(145, 66, 66); /*metodo mais compacto, sempre na ordem width - style - color */
+    border-radius: 10px; /*serve para arrendondar a borda*/
+    border-left-color: black;
+}

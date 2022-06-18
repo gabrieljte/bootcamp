@@ -1,0 +1,17 @@
+width: muda a largura do elemento (SOMENTE O CONTEUDO)
+height: muda a altura do elemento (SOMENTE O CONTEUDO)  
+------------------------------------------------------------ 
+border properties:
+border-width: controla a espessura da borda
+border-color: cor da borda
+border-style: estilo da borda (dashed,solid)
+------------------------------------------------------------ 
+padding: espaço entre o conteudo e a borda do elemento
+shorthand property:
+padding: value; - este valor será aplicado para todos os lados
+padding: value1 value2 - o valor 1 será aplicado para a vertical e o 2 para a horizontal
+padding: value1 value 2 value3 - value 1 e 3 para top e bottom respect, e valor 2 para a horizontal
+padding: v1 v2 v3 v4 - top, right, bottom, left;
+------------------------------------------------------------ 
+margin: espaço externo (margem) entre um elemento e outro 
+funciona da mesma forma que o padding(quanto a valores e shorthand property)
