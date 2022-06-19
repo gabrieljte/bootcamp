@@ -1,0 +1,5 @@
+static - é o padrão do navegador; não é alterada pelas propriedades top, right, left e bottom; é posicionado seguindo o flow do documento
+relative - é posicionada seguindo o flow do elemento, porém é afetada pelas 4 propriedades citadas
+absolute - sai do flow do elemento, não ocupando espaço nele. caso ele tenha um ancestral posiciado (qqr posição), as 4 propriedades citadas serão influenciadas a partir do elemento posicionado (exemplo é o index.html, em que a seção tem posição relative; sendo assim, o bloco vere (absolute) tera seus 50pixels contados a partir das bordas da section); caso não tenha um ancestral, ele sera posicionado segundo as bordas do body
+fixed - mesma ideia do absolute, entretanto, a posição dele é sempre relativa ao body; o principal ponto dela é que ela fica totalmente fixa, independente se o scroll foi utilizado para descer/subir a pagina
+sticky - https://developer.mozilla.org/en-US/docs/Web/CSS/position

@@ -1,0 +1,43 @@
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    /*transition: 1s; /*nesse caso, a transição entre o circle e o circle:hover irá demorar 1s para ocorrer; nesse caso, 1s sera apicado para qualquer transição que envolva o circle*/
+    /*sintaxe da transition: property name (background-color, color, width, height) | duration(1s,3s,10ms) | timing function | delay */
+    transition: background-color 1s, border-radius 2s;/*nesse caso, apenas o background-color irá demorar 1s para transicionar e terá 1s de delay antes de começar a transição*/
+}
+
+.circle:hover {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+section div {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    background-color: turquoise;
+    transition: margin-left 3s;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
+
+div:nth-of-type(1) {
+    transition-timing-function: ease-in; /*o timing-function de uma transition é a maneira de como aquele elemento ira realizar a transição https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function; todos os elementos **NESSE CASO** irão terminar em 3s transição, mesmo que de formas diferentes*/
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.075,0.82,0.165,1);
+}
+
+div:nth-of-type(4 ){
+    transition-timing-function: cubic-bezier(.5,1,.67,.55); 
+}

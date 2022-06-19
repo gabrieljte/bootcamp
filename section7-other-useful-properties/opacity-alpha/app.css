@@ -1,0 +1,21 @@
+section {
+    width: 400px;
+    height: 400px;
+    background-color: #00b7ff;
+    margin: 50px;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    /*background-color: rgba(255,255,255,0.5) /*quantidade red, qtd green, qtd blue, opacidade*/ /*essa opacide só interfere no background*/
+    /*ou*/background-color: #1ccc65b7; /*a opacidade dos hexadecimais se encontra no color picker*/
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: #fb8500;
+    opacity: 0.5; /*o atributo opacity é aplicado a todos os elementos, diferente do opacity do rgba, que só se aplica àquela cor*/
+}
+
