@@ -1,0 +1,14 @@
+section {
+    width: 80%;
+    height: 800px;
+    /*background-image: url(./unsplash.jpg);
+    background-position: center;
+    background-size: cover;*/
+    background: url(./unsplash.jpg) center/50% no-repeat, blueviolet; /*caso seja usado a propriedade background, o background-size deve vir sempre apos o background-position, separados por uma "/"*/ 
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
