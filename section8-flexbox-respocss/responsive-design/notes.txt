@@ -1,0 +1,11 @@
+@media queries - fazem com que seja possível a criação de sites responsíveis, tendo em vista que com esse "seletor", é possivel alterar como os elementos da página se comportarão dependendo do tamanho da tela, se está deitado ou em pé, etc 
+exemplo:
+@media (https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features // ex: width: 360px) {
+    div {
+        property: value;
+    }
+
+    main {
+        property: value;
+    }
+}

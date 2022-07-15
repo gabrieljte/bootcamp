@@ -1,0 +1,21 @@
+obs: flexbox é um mecanismo para indicar como os elementos se comportarão dentro de um container (sempre ocupa todo o espaço, e caso exceda o valor (3 divs de 100 em um container de 200: elas irão se diminuir para caber nos 200px), os elementos irão se diminuir para caber; caso falte (por exemplo, 2 divs de 50px e um container de 150, as divs só ocuparão os 100px))
+------------------------------------------------------------------------------------------------------------------------------------------------
+flex-direction: nos permite definir o eixo principal do container e sua direção (normal ou invertido, linha ou coluna)
+------------------------------------------------------------------------------------------------------------------------------------------------
+justify-content: como o conteudo será distribuido no eixo principal (em qual lado vai estar, se vai estar no centro, se vai ter espaço entre os itens)
+------------------------------------------------------------------------------------------------------------------------------------------------
+flex-wrap: define se os itens vão ficar numa mesma linha ou serão quebrados em várias (quando há falta de espaço)
+------------------------------------------------------------------------------------------------------------------------------------------------
+align-itens: como o conteudo será distribuido no cross axis (mesma coisa que o justify-content, porem no eixo secundário)
+------------------------------------------------------------------------------------------------------------------------------------------------
+align-content: distribui o espaço entre os elementos no eixo secundário
+------------------------------------------------------------------------------------------------------------------------------------------------
+align-self: funciona como um align-itens, exceto pelo fato de que funciona apenas para um elemento
+------------------------------------------------------------------------------------------------------------------------------------------------
+flex-basis: responsável pelo valor inicial de um flex-item (no main axis, ou seja: row - width e column - height)
+------------------------------------------------------------------------------------------------------------------------------------------------
+flex-grow: controla o espaço que um elemento vai ocupar (apenas em caso de haver espaço extra)
+------------------------------------------------------------------------------------------------------------------------------------------------
+flex-shrink: controla quanto o elemento vai diminuir quando não houver espaço sobrando
+------------------------------------------------------------------------------------------------------------------------------------------------
+flex(shorthand): 3values(flex-grow,flex-shrink,flex-basis); 2values, porém um com medida(flex-grow,flex-basis), 2values, sem medida(flex-grow,flex-shrink)
