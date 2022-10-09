@@ -1,0 +1,24 @@
+----- comparison operators -----
+> // greater than
+< // less than 
+>= // greater than or equal to
+<= // less than or equal to
+(!) == // equal
+!= // different/not equal 
+(!) === // strict equal
+!== // strict non-equal
+
+== > considera apenas o valor, mas não se preocupa com o tipo do elemento
+ex: 0 == 0 (true) // 0 == '' (true) // 7 == '7' // null = undefined (true)
+
+=== > considera o valor e o tipo
+ex: 0 === 0 (true) //  0 === '' (false) // 7 === '7' (false)
+
+----- console, alert and prompt -----
+console.log(arg) --> printa os argumentos no console
+exemplo: console.log('amo a marcela') --> amo a marcela (aparece no console)
+
+alert(arg) --> mostra um alerta na página 
+ex: alert("ok") --> irá aparecer um alerta escrito "ok"
+
+prompt(arg) --> também mostra um alerta, entretando há um espaço para escrever (input) e é possível armazenar o input
