@@ -22,3 +22,25 @@ alert(arg) --> mostra um alerta na página
 ex: alert("ok") --> irá aparecer um alerta escrito "ok"
 
 prompt(arg) --> também mostra um alerta, entretando há um espaço para escrever (input) e é possível armazenar o input
+
+----- if statements -----
+
+if: serve para condicionar o código a alguma coisa 
+ex: if (condition) {
+    ação caso a condição seja cumprida
+}
+
+else if: se a primeira condição não for true, irá rodar a segunda, no caso o else if
+ex: if(condition1) {
+    ação caso a condição1 seja cumprida
+} else if (condition2) {
+    ação caso a condição2 seja cumprida (só roda se a condição1 for false)
+}
+obs: diversos else if podem ser adicionados
+
+else: ultima parte do statement, não é necessário uma (condição), o else rodará caso todas as outras condições não sejam true
+ex: if(condition) {
+    ação se a condição for cumprida
+} else {
+    ação caso a condição não seja cumprida
+}
