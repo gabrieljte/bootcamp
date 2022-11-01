@@ -44,3 +44,11 @@ ex: if(condition) {
 } else {
     ação caso a condição não seja cumprida
 }
+
+----- logical AND -----
+&& - true se ambas as partes forem verdadeiras
+if (condition1 && condition2) {
+    ação caso ambas sejam verdadeiras
+} else {
+    ação caso uma (ou ambas) sejam falsas
+}
