@@ -52,3 +52,27 @@ if (condition1 && condition2) {
 } else {
     ação caso uma (ou ambas) sejam falsas
 }
+
+----- logical OR -----
+|| - se apenas uma parte for verdade, tudo sera verdade
+if (cond1 || cond2) {
+    ação caso uma ou ambas sejam verdadeiras
+} else {
+    ação caso ambas sejam falsas
+}
+
+----- logical NOT -----
+! - retorna true se a expressão é falsa
+!null -> false
+!(4 === 3) -> true
+
+----- switch -----
+const day = 1;
+switch(day) {
+    case 1:
+        console.log("segunda");
+        break;
+    case 2:
+        console.log("terça");
+        break;
+}
