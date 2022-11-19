@@ -8,3 +8,24 @@ let dias = ['segunda', 'terça', 'quarta', 'quarta', 'quinta']
 arrays são indexados: primos[0] - 1, familia[1] - maria, favoritos.length - 3, favoritos[3] - undefined
 dias[1] - 'segunda' --> dias[1][1] = 's' //retorna o index0 de dias, e dps o index0 de segunda
 favoritos[1] = '1917' -> gera um novo array, e substitui o primeiro termo -> favoritos - 1917, whiplash, interestelar
+
+array methods (ex: let array1 = ['a', 'b', 'c'] e let array2 = ['d', 'e', 'f'])
+push(arg) - adiciona ao fim do array - array1.push('d') -->  ['a', 'b', 'c', 'd']
+pop() - remove do fim do array - array1.pop() --> ['a', 'b'];
+unshift(arg) - adiciona ao começo - array1.unshift('z') --> ['z', 'a', 'b', 'c']
+shift() - remove do começo - array1.shift() --> ['b', 'c']
+splice(começo, quantidade) - array1.splice(0,2) --> ['c'] (remove 2 itens, a partir do index 0 ('a'), ou seja, remove 'a' e 'b'); 
+splice(index, quantidade, valor) --> array1.splice(2,1,'C') => ['a', 'b', 'C']
+concat(array que deseja concatenar/valor1,valor2,valor3...) - serve para concatenar arrays ou valores --> array1.concat(array2) = ['a', 'b', 'c', 'd', 'e', 'f']
+includes(arg) - retorna true ou false caso a array possua o valor do arg --> array1.includes('a') => true; array1.includes('e') => false
+join(vazio(,) ou um separador especifíco) - cria uma string a partir do array --> array1.join() => a,b,c; array1.join('-') => a-b-c
+reverse() - inverte a array --> destrutivo, muda a array original -> array1.reverse() => ['c', 'b', 'a']
+slice(inicio, fim) - copia parte da array --> array1.slice(1) => ['b', 'c']; array1.slice(0, 1) => ['a']
+--> array1 === array2 é false, mesmo iguais, pois a referência deles é diferente (como se fosse um CPF, gemeos possuem CPFs diferentes), a não ser que, em um momento anterior, tenha sido definidio que o array 1 é o mesmo que o array 2 -> array1 = array2, portanto array1 === array2
+--> const é usado com arrays pois, apesar dos valores dos index mudarem e a array sofer alterações no conteúdo, o javascript avalia somente o valor de referência
+--> arrays podem ser armazenadas dentro de outras arrays -->
+let box = [
+    ['brinquedos', 'jogos'] ,
+    ['computador', 'xbox'],
+    ['bola de basquete', 'kd14']
+]
