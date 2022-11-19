@@ -26,6 +26,6 @@ slice(inicio, fim) - copia parte da array --> array1.slice(1) => ['b', 'c']; arr
 --> arrays podem ser armazenadas dentro de outras arrays -->
 let box = [
     ['brinquedos', 'jogos'] ,
-    ['computador', 'xbox'],
+    ['computador', 'xbox'],               box[0] = ['brinquedos', 'jogos']; box[1] = ['computador', 'xbox'], box[1][1] = 'xbox'
     ['bola de basquete', 'kd14']
 ]
