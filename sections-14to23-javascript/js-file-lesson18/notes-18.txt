@@ -1,0 +1,31 @@
+object: são estruturas de dados que servem para armazenar propriedades de maneira mais ordenada que os arrays, sendo possível acessar elas depois por meio de keys que fazem "pares" com as propriedades, ou seja, property = key + value
+é possível aramzenas qualquer tipo, seja string, numbers, booleans (t ou f), inserir arrays dentro de objects
+exemplo: 
+const Gabriel = {
+    idade: 16,
+    cidade: "campo grande",
+    colegio: "cmcg"
+};
+como acessar: Object.key --> Gabriel.idade : 16; Gabriel.colegio : "cmcg"; Gabriel["idade"] = 16;
+
+alterando objects: da mesma maneira que nos arrays, mesmo que o object/array seja declarado com const, o interior dele (valores) pode ser trocado
+const notas = {
+    Gabriel: 10;
+    Marcela: 10;
+    Vinícius: 0
+}
+notas.Vinícius retorna 0 --> declara novamente notas.Vinícius = 10 --> notas.Vinícius passa a retornar 10;
+
+é possível juntar arrays e objects, exempo:
+let carrinho = [
+    {
+        produto: 'cueca',
+        valor: 9.99
+    },
+    {
+        produto: 'chocolate laka',
+        valor: 4.99 
+    }
+]
+
+carrinho[1].valor retorna 4.99; carrinho[0].produto retorna cueca
