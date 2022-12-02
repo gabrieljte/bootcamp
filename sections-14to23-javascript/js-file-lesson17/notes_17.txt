@@ -29,3 +29,7 @@ let box = [
     ['computador', 'xbox'],               box[0] = ['brinquedos', 'jogos']; box[1] = ['computador', 'xbox'], box[1][1] = 'xbox'
     ['bola de basquete', 'kd14']
 ]
+
+forEach(elemento =>  oque fazer com cada elemento)
+exemplo: ['a', 'b', 'c'].forEach(element => console.log(element))
+retorna: a; retorna: b; retorna: c;
