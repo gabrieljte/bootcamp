@@ -1,0 +1,31 @@
+objetivos: arrow functions e metodos (ForEach, map, filter, find, reduce, some, every)
+let numbers = [1,2,3,4,5,6,7,8,9]
+
+foreach --> nos permite rodar uma função para cada item de array
+sintaxe: array.forEach(função) ex:
+function log(numero) {console.log(numero)}
+numbers.forEach(log) //vai printar no console do 1 ao 9
+
+map --> cria um novo array com os resultados da função em cada elemento do array
+const doublenumbers = numbers.map(function(element) {
+    return element*2
+}) 
+-> retorna uma array nome chamada doublenumbers com os numeros multiplicados
+
+arrow functions --> nova sintaxe para definir function expression, maneira mais compacta
+sintaxe: const função = (elemento) => {código}
+ex: const soma = (x,y) => {return x+y}
+|
+->implicit return (apenas em arrow function): podemos deixar de escrever a keyword return em alguns casos
+ex: const greeting = person => ( 
+    `olá ${person}`
+)
+//ao trocar {} por (), javascript entende que voê está retornando o q está dentro (funciona para apenas uma linha de código, uma expressão)
+
+filter --> cria um novo array com os elementos que passaram no teste estipulado pelo filter
+sintaxe: let filtrado = array.filter(element => condição)
+
+reduce -> serve para fazer com aquele array com varios elementos se torne um array unitário
+sintaxe: let reduzido = array.reduce((callback) => código )
+
+arrow functions & this --> 
