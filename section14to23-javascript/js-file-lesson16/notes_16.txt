@@ -1,0 +1,78 @@
+----- comparison operators -----
+> // greater than
+< // less than 
+>= // greater than or equal to
+<= // less than or equal to
+(!) == // equal
+!= // different/not equal 
+(!) === // strict equal
+!== // strict non-equal
+
+== > considera apenas o valor, mas não se preocupa com o tipo do elemento
+ex: 0 == 0 (true) // 0 == '' (true) // 7 == '7' // null = undefined (true)
+
+=== > considera o valor e o tipo
+ex: 0 === 0 (true) //  0 === '' (false) // 7 === '7' (false)
+
+----- console, alert and prompt -----
+console.log(arg) --> printa os argumentos no console
+exemplo: console.log('amo a marcela') --> amo a marcela (aparece no console)
+
+alert(arg) --> mostra um alerta na página 
+ex: alert("ok") --> irá aparecer um alerta escrito "ok"
+
+prompt(arg) --> também mostra um alerta, entretando há um espaço para escrever (input) e é possível armazenar o input
+
+----- if statements -----
+
+if: serve para condicionar o código a alguma coisa 
+ex: if (condition) {
+    ação caso a condição seja cumprida
+}
+
+else if: se a primeira condição não for true, irá rodar a segunda, no caso o else if
+ex: if(condition1) {
+    ação caso a condição1 seja cumprida
+} else if (condition2) {
+    ação caso a condição2 seja cumprida (só roda se a condição1 for false)
+}
+obs: diversos else if podem ser adicionados
+
+else: ultima parte do statement, não é necessário uma (condição), o else rodará caso todas as outras condições não sejam true
+ex: if(condition) {
+    ação se a condição for cumprida
+} else {
+    ação caso a condição não seja cumprida
+}
+
+----- logical AND -----
+&& - true se ambas as partes forem verdadeiras
+if (condition1 && condition2) {
+    ação caso ambas sejam verdadeiras
+} else {
+    ação caso uma (ou ambas) sejam falsas
+}
+
+----- logical OR -----
+|| - se apenas uma parte for verdade, tudo sera verdade
+if (cond1 || cond2) {
+    ação caso uma ou ambas sejam verdadeiras
+} else {
+    ação caso ambas sejam falsas
+}
+
+----- logical NOT -----
+! - retorna true se a expressão é falsa
+!null -> false
+!(4 === 3) -> true
+
+----- switch -----
+const day = 1;
+switch(day) {
+    case 1:
+        console.log("segunda");
+        break;
+    case 2:
+        console.log("terça");
+        break;
+}

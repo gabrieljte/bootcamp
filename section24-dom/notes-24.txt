@@ -1,0 +1,21 @@
+DOM (Document Object Model) é uma "interface" que permite a interação do JavaScript dentro de uma webpage por meio dos objetos, como as tags HTML
+->Pensar num diagrama de árvore, com o 'document' sendo o topo, e os demais objetos abaixo, filhos do 'document'
+-Document é um objeto que possui diversos objetos representando todos os elementos da página, além de diversos métodos e propriedades
+- Para utilizar o DOM e manipular os conteudos com JS, precisamos selecionar os elementos do DOM a serem mudados; Quando um método é salvo em uma variável, pode parecer que
+o conteúdo é uma string HTML, porém é um objeto do DOM
+->HTMLcollection: é um coleção com elementos; elementos em JS são objetos que possuem as propriedades de um elemento HTML
+
+--selecionando o DOM
+
+-getElementById() -> método no documento; ao passar uma string, ele procura o elemento com aquele ID
+-getElementByTagName() -> método no documento; ao passar uma string, retorna uma HTMLcollection com todos os objetos daquela tag (todos os <a>, todos os <input>...)
+-> lembrar que o HTMLcollection é interativo, sendo assim, podemos usar index, length e for, porém não é uma array
+-getElementByClassName() -> método no documento; retorna um HTMLcollection com todos os objetos que possuem aquela class
+-querySelector() -> retorna o primeiro elemento que achar, podendo ser tag ('tag'), atributo('tag/.class/#id[atributo]'), id ('#id'), classe('.class')
+-querySelectorAll() -> mesmo principio, porém retorna uma Collection com os elementos, ao invés de apenas um
+
+----manipulando o DOM
+mdn: https://developer.mozilla.org/en-US/docs/Web/API/Element
+-innerText -> conteudo, texto interno daquele elemento
+-innerHTML -> texto interno com as tags e elementos, porém não mostra coisas invisíveis
+-textContent -> texto interno com o markup do editor (quebras de linha), além de mostrar todo o conteúdo, mesmo que o display seja none
