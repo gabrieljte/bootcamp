@@ -5,7 +5,7 @@ if (promptwhile === 'sim') {
     //         start++
     //         console.log(start) // melhor colocar while após
     // }
-    // 
+    
     // let senha = 190507
     // let login = prompt('digite sua senha')
     // let maxattempts = 0

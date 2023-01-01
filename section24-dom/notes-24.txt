@@ -19,3 +19,30 @@ mdn: https://developer.mozilla.org/en-US/docs/Web/API/Element
 -innerText -> conteudo, texto interno daquele elemento
 -innerHTML -> texto interno com as tags e elementos, porém não mostra coisas invisíveis
 -textContent -> texto interno com o markup do editor (quebras de linha), além de mostrar todo o conteúdo, mesmo que o display seja none
+-getAttribute -> elemento.getAttribute('atributo') e -setAttribute -> element.setAttribute('atributo', 'novo atributo') ex: ('href', 'novo link do href')
+
+----manipulando styles CSS
+
+element.style = retorna um "objeto", na maioria da vezes com empty strings, já que consta apenas os estilos inline. porém, é possível mudar o estilo usando
+esse metódo, ex: element.style.color = 'green' -> mesmo que não haja estilo inline, o elemento ira mudar para ver
+window.getComputedStyle = mostra os estilos computados daquele elemento; porém, é apenas read-only, logo não é possivel mudar o estilo
+classList = mostra as classes do elemento, sendo possivel adicionar usando elemento.classList.add('classe') e remover com .remove()
+|->.contains(class) -> checa se o elemento possui aquela classe (t ou f)
+|->.toggle(class) -> tira e adiciona, por exemplo, o botão no hover adiciona a classe e quando sai do hover tira (toggle)
+
+----parents,child,siblings
+element.parentElement = retorna o "pai" daquele elemento
+element.children[index] = retorna o "filho[index]" do elemento (cria um HTMLcollection)
+nextSibling e previousSibling: retorna o nó seguinte na lista, porém conta o espaço entre as tags, formando nodes (nós) #text (https://stackoverflow.com/questions/21357004/what-are-html-dom-text-elements)
+nextElementSibling e previousElementSibling: retorna o nó seguinte, porém filtrando apenas elementos 
+
+Everything in the DOM is represented by a node. Including plain text.
+In your case, the text nodes are coming from the whitespace you have around your elements for formatting. That text is counted just like any other text.
+All that empty whitespace around the opening/closing tags gets represented as text nodes. This is true for all elements in the DOM, not just tables.
+
+--adicionando elementos
+-> Document.createElement('tag') obs: não cria o elemento na tela, pois temos que dizer onde ela deve ficar (usando append, prepend, insertadjacentelement)
+https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement / https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend
+--removendo elementos
+-> removeChild -> remove o filho do pai (exemplo, uma imagem do body, uma div de um container, li de uma ul) -> parent.removeChild(child) ou child.parentElement.removeChild(child)
+-> remove -> remove o elemento -> elemento.remove()

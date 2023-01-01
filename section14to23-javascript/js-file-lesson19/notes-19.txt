@@ -49,14 +49,17 @@ break - serve para parar o loop atual caso determinada ação além da condiçã
 
 exemplo:
 
-let senha = 123456
-let x = prompt('digite a senha')
-while(x != senha) {
-    prompt('senha incorreta, digite novamente')
-    if (x === senha) {
-        while()
+let senha = 190507
+    let login = prompt('digite sua senha')
+    let maxattempts = 0
+    while (login != senha) {
+        prompt('digite a senha novamente, ela estava errada')
+        maxattempts ++
+        if (maxattempts === 3) {
+            alert('você atingiu o limite máximo')
+            break; //break tem que ser usado após todas as declarações no if statement
+        }
     }
-}
 
 ------//-----//-----//------//-----//-----//------//-----//-----//------//-----//-----//
 
