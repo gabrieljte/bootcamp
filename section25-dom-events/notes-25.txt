@@ -1,0 +1,23 @@
+Eventos Dom (Dom Events) são utilizados para notificar o código de novidades durante a navegação do usuário. Cada evento é representado por um objeto que é baseado na interface Event, e pode ter campos customizados adicionados e/ou funções usadas para obter informações adicionais sobre o que aconteceu. Eventos podem representar desde interações básicas do usuário (cliques, rolagem da página...) até notificações automáticas de novidades no DOM.
+
+-onclick -> quando o elemento é clicado, realiza o evento
+-ondblclick -> realiza o evento no clique duplo 
+
+-> addEventListener -> metodo para criar eventos
+sitaxe: element.addEventListener('evento(click, mouseenter...', () => {
+    callback
+})
+
+a keyword THIS dentro do eventlistener se refere ao elemento a qual o evento foi feito 
+
+--> event object
+element.addEventListener('evento', (e) => {console.log(e)}) //"e" é o object event
+
+
+--> form events and preventDefault
+-> forms, por padrão, enviam você para outra pagina (action)
+-> preventDefault é uma maneira de burlar isso, mantendo você na mesma página
+input.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+    code
+})
